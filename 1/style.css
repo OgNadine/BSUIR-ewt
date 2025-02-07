@@ -1,0 +1,94 @@
+@font-face {
+    font-family: 'Nadin';
+    src: url('fonts/nadin.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'prikol';
+    src: url('fonts/ofont.ru_Goznak.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'prikol2';
+    src: url('fonts/ofont.ru_Izvod.ttf') format('truetype');
+}
+body {
+    line-height: 1.6;
+    margin: 0;
+    padding: 50px;
+    background-color: #fff0f5;
+}
+.container {
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+h1 {
+    
+    text-align: center;
+    margin-top: 20px;
+}
+
+h2 {
+    margin-top: 40px;
+    border-bottom: 2px solid #2c3e50;
+    padding-bottom: 5px;
+}
+p{
+    text-align: justify;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin: 10px 0;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+td {
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+.img-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+img {
+    margin: 5px;
+    height: 250px;
+    border-radius: 25px;
+    width: 250px;
+    object-fit: cover;
+}
+.just {
+    text-align: justify;
+    font-family: 'prikol2';
+}
+.center {
+    text-align: center;
+    font-family: 'prikol';
+}
+.left{
+    text-align: end;
+    font-family: 'nadin';
+    font-size: 200%;
+}
+.bold-text {
+    font-weight: bold;
+}
+.strong-text {
+    font-weight: 900;
+}
