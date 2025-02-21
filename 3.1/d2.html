@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="d2.css">
+    <title>Flexbox Properties</title>
+    <script src="d2.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Flexbox Properties</h1>
+    </header>
+
+    <section>
+        <h2>Flex Direction</h2>
+        <div class="controls">
+            <button onclick="setFlexDirection('row')">Row</button>
+            <button onclick="setFlexDirection('row-reverse')">Row Reverse</button>
+            <button onclick="setFlexDirection('column')">Column</button>
+            <button onclick="setFlexDirection('column-reverse')">Column Reverse</button>
+        </div>
+        <div class="container" id="flex-direction-container">
+            <div class="box">1</div>
+            <div class="box">2</div>
+            <div class="box">3</div>
+        </div>
+    </section>
+
+    <section>
+        <h2>Flex Wrap</h2>
+        <div class="controls">
+            <button onclick="setFlexWrap('wrap')">Wrap</button>
+            <button onclick="setFlexWrap('nowrap')">No Wrap</button>
+            <button onclick="setFlexWrap('wrap-reverse')">Wrap Reverse</button>
+        </div>
+        <div class="container" id="flex-wrap-container">
+            <div class="box1">1</div>
+            <div class="box1">2</div>
+            <div class="box1">3</div>
+            <div class="box1">4</div>
+        </div>
+    </section>
+
+    <section>
+        <h3>Justify Content</h3>
+        <div class="controls">
+            <button onclick="setJustifyContent('flex-start')">Flex Start</button>
+            <button onclick="setJustifyContent('flex-end')">Flex End</button>
+            <button onclick="setJustifyContent('center')">Center</button>
+            <button onclick="setJustifyContent('space-between')">Space Between</button>
+            <button onclick="setJustifyContent('space-around')">Space Fround</button>
+        </div>
+        <div class="container" id="justify-content-container">
+            <div class="box">1</div>
+            <div class="box">2</div>
+            <div class="box">3</div>
+            <div class="box">4</div>
+        </div>
+    </section>
+</body>
+</html>
