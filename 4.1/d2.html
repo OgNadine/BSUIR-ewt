@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="d2.css">
+    <title>Grid Properties</title>
+    <script src="d2.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Grid Properties</h1>
+    </header>
+
+    <section>
+        <h2>Grid Template Columns</h2>
+        <div class="cont">
+            <button onclick="setGridTemplateColumns('repeat(3, 1fr)')">3 Columns</button>
+            <button onclick="setGridTemplateColumns('repeat(2, 1fr)')">2 Columns</button>
+            <button onclick="setGridTemplateColumns('1fr 2fr')">1:2 Ratio</button>
+        </div>
+        <div class="container" id="grid-template-container">
+            <div class="box">1</div>
+            <div class="box">2</div>
+            <div class="box">3</div>
+        </div>
+    </section>
+
+    <section>
+        <h2>Justify Content</h2>
+        <div class="cont">
+            <button onclick="setJustifyContent('start')">Start</button>
+            <button onclick="setJustifyContent('end')">End</button>
+            <button onclick="setJustifyContent('center')">Center</button>
+            <button onclick="setJustifyContent('space-between')">Space Between</button>
+            <button onclick="setJustifyContent('space-around')">Space Around</button>
+        </div>
+        <div class="container" id="justify-content-container">
+            <div class="box1">1</div>
+            <div class="box1">2</div>
+            <div class="box1">3</div>
+            <div class="box1">4</div>
+        </div>
+    </section>
+
+    <section>
+        <h2>Justify Items</h2>
+        <div class="cont">
+            <button onclick="setJustifyItems('start')">Start</button>
+            <button onclick="setJustifyItems('end')">End</button>
+            <button onclick="setJustifyItems('center')">Center</button>
+            <button onclick="setJustifyItems('stretch')">Stretch</button>
+        </div>
+        <div class="container" id="justify-items-container">
+            <div class="box">1</div>
+            <div class="box">2</div>
+            <div class="box">3</div>
+            <div class="box">4</div>
+        </div>
+    </section>
+
+</body>
+</html>
