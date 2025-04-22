@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Позиционирование в верстке</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.5.0/reveal.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.5.0/theme/black.min.css">
+  <style>
+    .reveal pre code {
+      font-size: 1rem;
+      line-height: 1.2;
+    }
+    .diagram {
+      font-size: 2rem;
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+  <div class="reveal">
+    <div class="slides">
+      <!-- Слайд 1 -->
+      <section data-transition="fade">
+        <h1>Позиционирование в верстке</h1>
+        <p>Основные концепции и практики</p>
+        <aside class="notes">
+          Сегодня мы поговорим о позиционировании в CSS — ключевом инструменте для создания сложных макетов.
+        </aside>
+      </section>
+
+      <!-- Слайд 2 -->
+      <section data-transition="slide">
+        <h2>Типы позиционирования</h2>
+        <ul>
+          <li>static</li>
+          <li>relative</li>
+          <li>absolute</li>
+          <li>fixed</li>
+          <li>sticky</li>
+        </ul>
+        <aside class="notes">
+          CSS предлагает 5 типов позиционирования: static, relative, absolute, fixed и sticky. Каждый из них имеет свои особенности и области применения.
+        </aside>
+      </section>
+
+      <!-- Слайд 3 -->
+      <section data-transition="convex">
+        <h2>Static</h2>
+        <div class="diagram">Без изменений</div>
+        <aside class="notes">
+          Static — это значение по умолчанию. Элементы располагаются в обычном потоке документа без каких-либо изменений.
+        </aside>
+      </section>
+
+      <!-- Слайд 4 -->
+      <section data-transition="concave">
+        <h2>Relative</h2>
+        <div class="diagram">Смещение относительно себя</div>
+        <aside class="notes">
+          Relative позволяет смещать элемент относительно его обычного положения. Остальные элементы остаются на своих местах.
+        </aside>
+      </section>
+
+      <!-- Слайд 5 -->
+      <section data-transition="zoom">
+        <h2>Absolute</h2>
+        <div class="diagram">Относительно ближайшего позиционированного родителя</div>
+        <aside class="notes">
+          Absolute позиционирует элемент относительно ближайшего родителя с position: relative, absolute или fixed. Если такого нет, то относительно viewport.
+        </aside>
+      </section>
+
+      <!-- Слайд 6 -->
+      <section data-transition="fade-out slide-in">
+        <h2>Fixed</h2>
+        <div class="diagram">Фиксированное положение относительно viewport</div>
+        <aside class="notes">
+          Fixed позиционирует элемент относительно окна просмотра. Элемент остается на месте даже при прокрутке страницы.
+        </aside>
+      </section>
+
+      <!-- Слайд 7 -->
+      <section data-transition="slide-out fade-in">
+        <h2>Sticky</h2>
+        <div class="diagram">Переключение между relative и fixed</div>
+        <aside class="notes">
+          Sticky комбинирует поведение relative и fixed. Элемент начинает вести себя как fixed, когда достигает определенной точки при прокрутке.
+        </aside>
+      </section>
+
+      <!-- Слайд 8 -->
+      <section data-transition="cube">
+        <h2>Пример кода</h2>
+        <pre><code class="css">
+.example {
+  position: relative;
+  top: 20px;
+  left: 30px;
+}
+        </code></pre>
+        <aside class="notes">
+          Вот пример использования relative позиционирования. Элемент смещается на 20px вниз и на 30px вправо от своего обычного положения.
+        </aside>
+      </section>
+
+      <!-- Слайд 9 -->
+      <section data-transition="page">
+        <h2>Заключение</h2>
+        <p>Позиционирование — мощный инструмент для создания гибких макетов.</p>
+        <aside class="notes">
+          Правильное использование позиционирования помогает создавать адаптивные и удобные интерфейсы. Важно понимать, как работают разные типы позиционирования.
+        </aside>
+      </section>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.5.0/reveal.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.5.0/plugin/highlight/highlight.min.js"></script>
+  <script>
+    Reveal.initialize({
+      controls: true,
+      progress: true,
+      center: true,
+      plugins: [RevealHighlight]
+    });
+  </script>
+</body>
+</html>
